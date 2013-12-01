@@ -53,8 +53,8 @@ def transactionHash(send_address=None, receive_address=None):
 	return trans_hash
 
 if __name__ == "__main__":
-  #The following are just test addresses that should return 'c7cb0ea5934b2019ef8aec3c4f2c0bb8b6b52cda751e51427a96c8e60a3a87e0
-'
+  """The following are just test addresses that should return 'c7cb0ea5934b2019ef8aec3c4f2c0bb8b6b52cda751e51427a96c8e60a3a87e0
+"""
   send_address='1MPwN67aihW6REd8Qh8kUtWCG3cVu6M4w5'
   receive_address = '15LYSZvdF46MeV3MsxjU7XbTkGvQiATQX5'
 	transactionHash(send_address=send_address, receive_address = receive_address)
