@@ -2,7 +2,10 @@ import requests
 import json
 
 from StringIO import StringIO
+'''verifyHash(receive_address, trans_hash, value=None) RETURNS value of transaction if value=None
+returns True if transaction value equals value or False otherwise'''
 
+#Extend to verify sender address
 
 
 #DO NOT MESS WITH THE FOLLOWING HARD CODED INDEXES UNLESS YOU KNOW WHAT YOU ARE DOING AND BLOCKCHAIN.INFO HAS CHANGED ITS API
@@ -47,6 +50,9 @@ def verifyHash(receive_address, trans_hash, value=None):
 		if value != trans_value:
 			print 'Original Value Entered: ' + str(value)
 			print 'Transaction Actual Value: ' + str(trans_value)
+			return False
+		else:
+			return True
 
 
 if __name__ == '__main__':
